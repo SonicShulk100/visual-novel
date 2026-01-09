@@ -14,4 +14,4 @@ label chapt_1_jeha:
 
   hide jeha babykicks with dissolve
 
-  jump chapt_1_choice
+  jump chapt_1_choices
