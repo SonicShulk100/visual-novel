@@ -38,4 +38,11 @@ git switch audio && git pull && git rebase origin/main && git push -u origin aud
 # Switching back to Main
 #=======================
 
+#========================
+# Minor Branches : script
+#========================
+
+git switch script-characters && git pull && git rebase origin/main && git push -u origin script-characters
+
+
 git switch main && git pull
