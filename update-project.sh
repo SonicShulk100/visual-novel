@@ -1,55 +1,44 @@
 #!/usr/bin/bash
 
-#==================================
-# Fetching and pulling the project.
-#==================================
-git fetch && git pull
-
-#==================
-# Switching to Main
-#==================
+git fetch origin
 
 git switch main && git pull && git rebase origin/main && git push -u origin main
 
+#==============
+# Main Branches
+#==============
+MAIN_BRANCHES=("script", "images", "audio")
 
-#==============
-# Main branches
-#==============
+for MAIN_BRANCH in "${MAIN_BRANCHES[@]}"; do
+  git switch "$MAIN_BRANCH"
+  git pull
+  git rebase origin/main
+  git push -u origin "$MAIN_BRANCH"
+done
+
+#======================
+# Sub Branches : SCRIPT
+#======================
+SCRIPT_BRANCHES=("script-characters", "script-narration", "script-choices")
+
+for SUB_SCRIPT_BRANCH in "${SCRIPT_BRANCES[@]}"; do
+  git switch "$SUB_SCRIPT_BRANCH"
+  git pull
+  git rebase origin/main
+  git push -u origin "$SUB_SCRIPT_BRANCH"
+done
+
 
 #=====================
-# Switching to script
+# Sub Branches : IMAGE
 #=====================
+IMAGE_BRANCHES=("images-characters", "images-backgrounds")
 
-git switch script && git pull && git rebase origin/main && git push -u origin script
-
-#====================
-# Switching to images
-#====================
-
-git switch images && git pull && git rebase origin/main && git push -u origin images
-
-#===================
-# Switching to audio
-#===================
-
-git switch audio && git pull && git rebase origin/main && git push -u origin audio
-
-#========================
-# Minor Branches : script
-#========================
-
-git switch script-characters && git pull && git rebase origin/main && git push -u origin script-characters
-
-#========================
-# Minor Branches : images
-#========================
-
-git switch images-characters && git pull && git rebase origin/main && git push -u origin images-characters
-
-git switch images-backgrounds && git pull && git rebase origin/main && git push -u origin images-backgrounds
-
-#=======================
-# Switching back to main
-#=======================
+for SUB_IMAGE_BRANCH in "${IMAGE_BRANCHES[@]}"; do
+  git switch "$SUB_IMAGE_BRANCH"
+  git pull
+  git rebase origin/main
+  git push -u origin "$SUB_IMAGE_BRANCH"
+done
 
 git switch main && git pull
