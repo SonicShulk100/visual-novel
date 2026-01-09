@@ -1,5 +1,5 @@
 label chapter_1_part_2:
-    show dijo neutral at center
+  show dijo neutral at center
   with dissolve
 
   dijo "It would seem that it's about time we should take a rest for tomorrow."
@@ -31,3 +31,33 @@ label chapter_1_part_2:
   dijo "Are you... serious?"
 
   jess "I am."
+
+  hide cin neutral with dissolve
+
+  show mari neutral at left
+  with dissolve
+
+  mari "Which direction?"
+
+  "Jessica then pointed the direction her babies have given her."
+
+  jess "It's that way."
+
+  hide dijo neutral
+  hide jess neutral
+  hide mari neutral
+  with dissolve
+
+  "The five then went to the direction had told about."
+
+  "And sure enough, as they approached towards the direction, they noticed what Jessica had described."
+
+  show dijo sad at center
+  with dissolve
+
+  dijo "That's... horrible..."
+
+  show jeha neutral at right
+  with dissolve
+
+  jeha "It really is..."
