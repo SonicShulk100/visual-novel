@@ -45,9 +45,11 @@ git switch audio && git pull && git rebase origin/main && git push -u origin aud
 git switch script-characters && git pull && git rebase origin/main && git push -u origin script-characters
 
 #========================
-# Minor Branches : Audio
+# Minor Branches : images
 #========================
 
 git switch images-characters && git pull && git rebase origin/main && git push -u origin images-characters
+
+git switch images-backgrounds && git pull && git rebase origin/main && git push -u origin images-backgrounds
 
 git switch main && git pull
