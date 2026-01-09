@@ -14,3 +14,6 @@ label introduct_choice:
     "Maria" if not mari_introduced:
       $mari_introduced = True
       jump mari_introduct
+    "Jessica" if not jess_introduced:
+      $ jess_introduced = True
+      jump jess_introduct
