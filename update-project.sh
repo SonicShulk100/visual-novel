@@ -7,7 +7,7 @@ git switch main && git pull && git rebase origin/main && git push -u origin main
 #==============
 # Main Branches
 #==============
-MAIN_BRANCHES=("script" "images" "audio")
+MAIN_BRANCHES=("script" "images" "audio" "gui")
 
 for MAIN_BRANCH in "${MAIN_BRANCHES[@]}"; do
   git switch "$MAIN_BRANCH"
@@ -39,6 +39,19 @@ for SUB_IMAGE_BRANCH in "${IMAGE_BRANCHES[@]}"; do
   git pull
   git rebase origin/main
   git push -u origin "$SUB_IMAGE_BRANCH"
+done
+
+
+#=====================
+# Sub Branches : AUDIO
+#=====================
+AUDIO_BRANCHES=("audio-sfx" "audio-music")
+
+for SUB_AUDIO_BRANCH in "${AUDIO_BRNACHES[@]}"; do
+  git switch "$SUB_AUDIO_BRANCH"
+  git pull
+  git rebase origin/main
+  git push -u origin "$SUB_AUDIO_BRANCH"
 done
 
 git switch main && git pull
