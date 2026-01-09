@@ -34,10 +34,6 @@ git switch images && git pull && git rebase origin/main && git push -u origin im
 
 git switch audio && git pull && git rebase origin/main && git push -u origin audio
 
-#=======================
-# Switching back to Main
-#=======================
-
 #========================
 # Minor Branches : script
 #========================
@@ -51,5 +47,9 @@ git switch script-characters && git pull && git rebase origin/main && git push -
 git switch images-characters && git pull && git rebase origin/main && git push -u origin images-characters
 
 git switch images-backgrounds && git pull && git rebase origin/main && git push -u origin images-backgrounds
+
+#=======================
+# Switching back to main
+#=======================
 
 git switch main && git pull
