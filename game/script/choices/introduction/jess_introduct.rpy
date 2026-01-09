@@ -23,6 +23,6 @@ label jess_introduct:
 
   menu:
     "Yes":
-      jump introduct_jess
+      jump jess_introduct
     "No":
       jump introduct_choice

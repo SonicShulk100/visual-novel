@@ -17,3 +17,6 @@ label introduct_choice:
     "Jessica" if not jess_introduced:
       $ jess_introduced = True
       jump jess_introduct
+    "Cindy" if not cin_introduced:
+      $ cin_introduced = True
+      jump cin_introduct

@@ -18,6 +18,6 @@ label mari_introduct:
 
   menu:
     "Yes":
-      jump introduct_mari
+      jump mari_introduct
     "No":
       jump introduct_choice

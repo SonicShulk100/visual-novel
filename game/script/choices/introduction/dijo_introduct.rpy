@@ -17,7 +17,7 @@ label dijo_introduct:
 
   menu:
     "Yes":
-      jump introduct_dijo
+      jump dijo_introduct
     "No":
       jump introduct_choice
 
