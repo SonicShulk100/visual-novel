@@ -21,7 +21,7 @@ done
 #======================
 SCRIPT_BRANCHES=("script-characters" "script-narration" "script-choices")
 
-for SUB_SCRIPT_BRANCH in "${SCRIPT_BRANCES[@]}"; do
+for SUB_SCRIPT_BRANCH in "${SCRIPT_BRANCHES[@]}"; do
   git switch "$SUB_SCRIPT_BRANCH"
   git pull
   git rebase origin/main
