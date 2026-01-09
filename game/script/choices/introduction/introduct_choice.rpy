@@ -12,7 +12,7 @@ label introduct_choice:
       $ dijo_introduced = True
       jump dijo_introduct
     "Maria" if not mari_introduced:
-      $mari_introduced = True
+      $ mari_introduced = True
       jump mari_introduct
     "Jessica" if not jess_introduced:
       $ jess_introduced = True
@@ -20,3 +20,6 @@ label introduct_choice:
     "Cindy" if not cin_introduced:
       $ cin_introduced = True
       jump cin_introduct
+    "Jehanne" if not jeha_introduced:
+      $ jeha_introduced = True
+      jump jeha_introduct
