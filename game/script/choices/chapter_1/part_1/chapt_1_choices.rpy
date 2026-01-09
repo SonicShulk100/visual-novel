@@ -1,6 +1,7 @@
 default talked_dijo = False
 default talked_mari = False
 default talked_jess = False
+default talked_cin = False
 
 label chapt_1_choices:
   "Which characters do you want to talk about"
@@ -14,3 +15,6 @@ label chapt_1_choices:
     "Jessica" if not talked_jess:
       $ talked_jess = True
       jump chapt_1_jess
+    "Cindy" if not talked_cin:
+      $ talked_cin = True
+      jump chapt_1_cin
