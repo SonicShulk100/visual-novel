@@ -23,3 +23,10 @@ label introduct_choice:
     "Jehanne" if not jeha_introduced:
       $ jeha_introduced = True
       jump jeha_introduct
+    "Continue" if (
+      dijo_introduced and
+      mari_introduced and
+      jess_introduced and
+      cin_introduced and
+      jeha_introduced):
+        jump introduction_part_2
