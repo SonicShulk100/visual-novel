@@ -1,8 +1,4 @@
 label chapt_1_dijo:
-  hide cin neutral
-  hide jeha neutral
-  with dissolve
-
   show dijo neutral at center
   with dissolve
 
