@@ -35,3 +35,5 @@ label chapter_1_part_1:
   hide cin neutral
   hide jeha neutral
   with dissolve
+
+  jump chapt_1_choices
