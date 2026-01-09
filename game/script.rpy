@@ -2,8 +2,9 @@
 init python:
     Dijonay = VisualNovelCharacter("Dijonay", "dijo", "#0000FF")
     Maria = VisualNovelCharacter("Maria", "mari", "#5199E9")
+    Jessica = VisualNovelCharacter("Jessica", "jess", "#F4F3F5")
 
-    characters = [Dijonay, Maria]
+    characters = [Dijonay, Maria, Jessica]
     emotion_list = ["neutral", "angry", "sad", "babykicks", "contraction", "waterbreak"]
 
     for char in characters:
@@ -13,6 +14,7 @@ init python:
 #Defining protagonists.
 define dijo = Dijonay.character
 define mari = Maria.character
+define jess = Jessica.character
 
 label start:
 
@@ -32,6 +34,8 @@ label start:
             jump dijo_action
         "Maria":
             jump mari_action
+        "Jessica":
+            jump jess_action
         "Finish":
             return
 
@@ -101,4 +105,38 @@ label mari_action:
     mari "This is me going in labor"
     
     hide mari waterbreak with dissolve
+    jump start
+
+label jess_action:
+    show jess neutral at center
+    with dissolve
+
+    jess "This is me being neutral"
+
+    show jess angry at center
+    with dissolve
+
+    jess "This is me being angry"
+
+    show jess sad at center
+    with dissolve
+
+    jess "This is me being sad"
+
+    show jess babykicks at center
+    with dissolve
+
+    jess "This is me feeling the babies kick"
+
+    show jess contraction at center
+    with dissolve
+
+    jess "This is me experiecing a contraction"
+
+    show jess waterbreak at center
+    with dissolve
+
+    jess "This is me going in labor"
+
+    hide jess waterbreak with dissolve
     jump start
