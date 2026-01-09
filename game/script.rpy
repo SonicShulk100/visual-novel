@@ -1,21 +1,18 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-# The game starts here.
-
+﻿#Initialiazing charactes with emotions
 init python:
     Dijonay = VisualNovelCharacter("Dijonay", "dijo", "#0000FF")
+    Maria = VisualNovelCharacter("Maria", "mari", "#5199E9")
 
-    characters = [Dijonay]
+    characters = [Dijonay, Maria]
     emotion_list = ["neutral", "angry", "sad", "babykicks", "contraction", "waterbreak"]
 
     for char in characters:
         for emotion in emotion_list:
             char.add_emotion(emotion, f"images/characters/{char.image_prefix}/{char.image_prefix}_{emotion}.png")
 
+#Defining protagonists.
 define dijo = Dijonay.character
+define mari = Maria.character
 
 label start:
 
@@ -33,6 +30,8 @@ label start:
     menu:
         "Dijonay":
             jump dijo_action
+        "Maria":
+            jump mari_action
         "Finish":
             return
 
@@ -65,7 +64,41 @@ label dijo_action:
     show dijo waterbreak at center
     with dissolve
 
-    dijo "This is me going in labor."
+    dijo "This is me going in labor"
 
     hide dijo waterbreak with dissolve
+    jump start
+
+label mari_action:
+    show mari neutral at center
+    with dissolve
+
+    mari "This is me being neutral"
+
+    show mari angry at center
+    with dissolve
+
+    mari "This is me being angry"
+
+    show mari sad at center
+    with dissolve
+
+    mari "This is me being sad"
+    
+    show mari babykicks at center
+    with dissolve
+
+    mari "This is me feeling the babies kick"
+
+    show mari contraction at center
+    with dissolve
+
+    mari "This is me feeling a contraction"
+
+    show mari waterbreak at center
+    with dissolve
+
+    mari "This is me going in labor"
+    
+    hide mari waterbreak with dissolve
     jump start
