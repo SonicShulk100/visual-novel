@@ -21,4 +21,4 @@ define cin = Cindy.character
 define jeha = Jehanne.character
 
 label start:
-    jump introduciton_part_1
+    jump introduction_part_1
