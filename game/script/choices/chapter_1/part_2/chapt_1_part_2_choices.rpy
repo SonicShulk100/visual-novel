@@ -2,6 +2,7 @@ default dijo_picked = False
 default mari_picked = False
 default jess_picked = False
 default cin_picked = False
+default jeha_picked = False
 
 label chapt_1_part_2_choices:
   show dijo neutral at center
@@ -23,3 +24,6 @@ label chapt_1_part_2_choices:
     "Cindy : I'll do it!":
       $cin_picked = True
       jump chapt_1_part_2_cin
+    "Jehanne : I call dibs!":
+      $ jeha_picked = True
+      jump chapt_1_part_2_jeha
