@@ -1,4 +1,4 @@
-label chapt_1_mari:
+label chapt_1_part_1_mari:
   show mari neutral at center
   with dissolve
 
@@ -22,4 +22,4 @@ label chapt_1_mari:
 
   hide mari neutral with dissolve
 
-  jump chapt_1_choices
+  jump chapt_1_part_1_choices

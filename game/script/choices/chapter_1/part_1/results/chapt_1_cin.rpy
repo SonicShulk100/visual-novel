@@ -1,4 +1,4 @@
-label chapt_1_cin:
+label chapt_1_part_1_cin:
   show cin neutral at center
   with dissolve
 
@@ -21,4 +21,4 @@ label chapt_1_cin:
 
   hide cin babykicks with dissolve
 
-  jump chapt_1_choices
+  jump chapt_1_part_1_choices
