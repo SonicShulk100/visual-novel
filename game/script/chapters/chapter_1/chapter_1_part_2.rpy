@@ -61,3 +61,5 @@ label chapter_1_part_2:
   with dissolve
 
   jeha "It really is..."
+
+  jump chapt_1_part_2_choices
