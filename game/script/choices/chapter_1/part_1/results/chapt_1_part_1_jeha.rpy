@@ -1,4 +1,4 @@
-label chapt_1_jeha:
+label chapt_1_part_1_jeha:
   show jeha babykicks at center
   with dissolve
 
@@ -14,4 +14,4 @@ label chapt_1_jeha:
 
   hide jeha babykicks with dissolve
 
-  jump chapt_1_choices
+  jump chapt_1_part_1_choices

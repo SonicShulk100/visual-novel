@@ -36,4 +36,4 @@ label chapter_1_part_1:
   hide jeha neutral
   with dissolve
 
-  jump chapt_1_choices
+  jump chapt_1_part_1_choices
