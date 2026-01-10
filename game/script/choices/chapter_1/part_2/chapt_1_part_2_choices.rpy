@@ -1,5 +1,6 @@
 default dijo_picked = False
 default mari_picked = False
+default jess_picked = False
 
 label chapt_1_part_2_choices:
   show dijo neutral at center
@@ -15,3 +16,6 @@ label chapt_1_part_2_choices:
     "Maria : Maybe I would like to.":
       $ mari_picked = True
       jump chapt_1_part_2_mari
+    "Jessica : Do you mind if I pick him up?":
+      $ jess_picked = True
+      jump chapt_1_part_2_jess
