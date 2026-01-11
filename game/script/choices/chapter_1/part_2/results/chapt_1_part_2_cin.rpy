@@ -17,3 +17,5 @@ label chapt_1_part_2_cin:
   "She could feel the cold skin of his body touching her, causing her to feel a shiver down her spine."
 
   cin "Jeez... He's really out cold..."
+
+  jump chapter_1_part_3_1
