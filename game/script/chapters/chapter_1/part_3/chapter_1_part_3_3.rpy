@@ -4,7 +4,7 @@ label chapter_1_part_3_3:
 
     "It has been quite a while since the five hyperpregnant ladies picked the werewolf boy up."
 
-    if dijo_picked == True:
+    if dijo_picked == True or jeha_picked == True:
         jump chapter_1_part_3_3_dijo
     elif mari_picked == True:
         jump chapter_1_part_3_3_mari
