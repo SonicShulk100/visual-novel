@@ -31,3 +31,5 @@ label chapt_1_part_2_dijo:
   "She could feel the boy's cold skin touching hers, causing her to feel a chill down her spine."
 
   dijo "Geez... I feel sorry for this kid going what he has to go through end up like this..."
+
+  jump chapter_1_part_3_1
