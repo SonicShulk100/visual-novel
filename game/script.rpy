@@ -6,6 +6,9 @@ init python:
     Cindy = VisualNovelCharacter("Cindy", "cin", "#B2A78A")
     Jehanne = VisualNovelCharacter("Jehanne", "jeha", "#5A5A5A")
 
+    Unknown = VisualNovelCharacter("Unknown", "unknown", "#A5A5A5")
+    Kurt = VisualNovelCharacter("Kurt", "kurt", "#A5A5A5")
+
     characters = [Dijonay, Maria, Jessica, Cindy, Jehanne]
     emotion_list = ["neutral", "angry", "sad", "babykicks", "contraction", "waterbreak"]
 
@@ -19,6 +22,9 @@ define mari = Maria.character
 define jess = Jessica.character
 define cin = Cindy.character
 define jeha = Jehanne.character
+
+define unknown = Unknown.character
+define kurt = Kurt.character
 
 label start:
     jump introduction_part_1
