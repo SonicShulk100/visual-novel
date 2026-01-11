@@ -10,4 +10,4 @@ label chapter_1_part_3_1:
   elif cin_picked == True:
     jump chapter_1_part_3_1_cin
   elif jeha_picked == True:
-    
+    jump chapter_1_part_3_1_jeha
