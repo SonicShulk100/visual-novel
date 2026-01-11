@@ -20,3 +20,5 @@ label chapt_1_part_2_mari:
   mari "Jesus...! This kid's got a cold body..."
 
   dijo "Right? He does need the warmth from us."
+
+  jump chapter_1_part_3_1

@@ -6,3 +6,5 @@ label chapter_1_part_3_3:
 
     if dijo_picked == True:
         jump chapter_1_part_3_3_dijo
+    elif mari_picked == True:
+        jump chapter_1_part_3_3_mari
