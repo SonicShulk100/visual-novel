@@ -47,7 +47,7 @@ done
 #=====================
 AUDIO_BRANCHES=("audio-sfx" "audio-music")
 
-for SUB_AUDIO_BRANCH in "${AUDIO_BRNACHES[@]}"; do
+for SUB_AUDIO_BRANCH in "${AUDIO_BRANCHES[@]}"; do
   git switch "$SUB_AUDIO_BRANCH"
   git pull
   git rebase origin/main
