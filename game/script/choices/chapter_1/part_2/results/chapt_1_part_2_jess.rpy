@@ -13,3 +13,5 @@ label chapt_1_part_2_jess:
   jess "Jeez... How long has his skin been felt cold?"
 
   dijo "It's a miracle that we got here before things would happen to him."
+
+  jump chapter_1_part_3_1
