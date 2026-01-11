@@ -6,7 +6,7 @@ default cin_introduced = False
 default jeha_introduced = False
 
 label introduct_choice:
-  "Which of the characters fo you want to know...?"
+  "Which of the characters do you want to know...?"
   menu:
     "Dijonay" if not dijo_introduced:
       $ dijo_introduced = True
@@ -23,10 +23,5 @@ label introduct_choice:
     "Jehanne" if not jeha_introduced:
       $ jeha_introduced = True
       jump jeha_introduct
-    "Continue" if (
-      dijo_introduced and
-      mari_introduced and
-      jess_introduced and
-      cin_introduced and
-      jeha_introduced):
+    "Continue" if dijo_introduced and mari_introduced and jess_introduced and cin_introduced and jeha_introduced:
         jump introduction_part_2
