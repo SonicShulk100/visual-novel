@@ -1,4 +1,4 @@
-label chapter_1_part_3_2_jeha    
+label chapter_1_part_3_2_jeha:
     show jeha neutral at center
     with dissolve
 
@@ -17,7 +17,7 @@ label chapter_1_part_3_2_jeha
 
     cin "And is that a bad thing?"
 
-    dijo "Well... Until we know for sure whether his perents are worried about him or not, he will be under our utmost care."
+    dijo "Well... Until we know for sure whether his parents are worried about him or not, he will be under our utmost care."
 
     hide cin neutral with dissolve
 
