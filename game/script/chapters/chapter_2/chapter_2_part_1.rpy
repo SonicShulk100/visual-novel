@@ -121,7 +121,7 @@ label chapter_2_part_1:
         mari "Not yet... Let him rest a bit longer."
 
     elif jess_picked:
-        show jess neutral at right
+        show jess neutral at center
         with dissolve
 
         "Jessica was the first to wake up, her eyes fluttering open as she took in the serene surroundings."
@@ -142,6 +142,34 @@ label chapter_2_part_1:
         mari "I wonder if the others are still asleep..."
 
         jess "Probably. This forest is so peaceful; it's hard to wake up early here."
+
+        show dijo neutral at rigth
+        with dissolve
+
+        dijo "Good morning, you two."
+
+        mari "Oh, Dijo! You're awake too."
+
+        jess "Good morning, Dijo."
+
+        hide dijo neutral
+        hide mari neutral
+        show cin neutral at left
+        show jeha neutral at right
+        with dissolve
+
+        cin "Good morning, everyone..."
+        jeha "Good morning, ladies~"
+
+        jess "I guess everyone, except for Kurt, is awake."
+
+        hide jeha neutral
+        show dijo neutral at right
+        with dissolve
+
+        dijo "Who's Kurt...?"
+
+        jess "He's the boy's name who's still asleep."
     
     elif cin_picked:
         show cin neutral at center
