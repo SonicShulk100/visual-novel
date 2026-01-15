@@ -20,6 +20,46 @@ label chapter_2_part_1:
 
         dijo "(I wonder what adventures await us today in this enchanting forest.)"
 
+        "She then stood up with her strength and, began groping her ass to make sure that she is still awake."
+
+        dijo "Hmmm.... That feels so good..."
+
+        show mari neutral at left
+        show jess neutral at right
+        with dissolve
+
+        dijo "Ah... Good morning, you two."
+
+        mari "Good morning, Dijo."
+
+        jess "Good morning, Dijo..."
+
+        dijo "Are Cindy and Jehanne still asleep?"
+
+        jess "They must be tired after what happened last night."
+
+        dijo "I can tell..."
+
+        hide mari neutral
+        show cin neutral at left
+        with dissolve
+
+        cin "Good morning, you three..."
+
+        dijo "Oh, Cindy! You're awake too."
+
+        hide jess neutral
+        show jeha neutral at right
+        with dissolve
+
+        jeha "Good morning, everyone..."
+
+        dijo "I guess everyone, except for Kurt, is awake."
+
+        cin "Who's Kurt...?"
+
+        dijo "The boy's name who's still asleep."
+
     elif mari_picked:
         show mari neutral at center
         with dissolve
@@ -35,7 +75,7 @@ label chapter_2_part_1:
         mari "(I wonder what adventures await us today in this enchanting forest.)"
     
     elif jess_picked:
-        show jess neutral at center
+        show jess neutral at right
         with dissolve
 
         "Jessica was the first to wake up, her eyes fluttering open as she took in the serene surroundings."
