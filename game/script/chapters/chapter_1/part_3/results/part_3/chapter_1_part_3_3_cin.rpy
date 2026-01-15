@@ -47,3 +47,5 @@ label chapter_1_part_3_3_cin:
     hide cin neutral with dissolve
 
     "And so, both Kurt and Cindy began sleeping"
+
+    jump chapter_2_part_1

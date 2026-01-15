@@ -47,3 +47,5 @@ label chapter_1_part_3_3_mari:
     hide mari neutral with dissolve
 
     "And so both Maria and Kurt went to sleep."
+
+    jump chapter_2_part_1

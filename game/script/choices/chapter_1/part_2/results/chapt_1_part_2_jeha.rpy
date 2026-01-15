@@ -26,3 +26,5 @@ label chapt_1_part_2_jeha:
   mari "Is she really that horny...?"
 
   dijo "You would be surprised..."
+
+  jump chapter_1_part_3_1

@@ -63,3 +63,5 @@ label chapter_1_part_3_2_jeha:
 
     hide dijo neutral
     with dissolve
+
+    jump chapter_1_part_3_3

@@ -62,3 +62,5 @@ label chapter_1_part_3_3_jess:
     with dissolve
 
     "And so, both Maria and Jessica began sleeping."
+
+    jump chapter_2_part_1
