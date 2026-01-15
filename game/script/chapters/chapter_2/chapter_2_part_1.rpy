@@ -73,7 +73,53 @@ label chapter_2_part_1:
         "Maria carefully adjusted her position to avoid disturbing him, a gentle smile on her face."
 
         mari "(I wonder what adventures await us today in this enchanting forest.)"
-    
+
+        show jess neutral at left
+        with dissolve
+
+        jess "Good morning, Maria."
+
+        mari "Good morning, Jessica."
+
+        jess "Are the others still asleep?"
+
+        mari "Yep. Seems I'm the first to wake up and you would be the second."
+
+        jess "To think that we all fell asleep so deeply last night..."
+
+        show dijo neutral at right
+        with dissolve
+
+        dijo "Good morning, you two."
+
+        mari "Oh, Dijo! You're awake too."
+
+        jess "Good morning, Dijo."
+
+        hide dijo neutral
+        hide jess neutral
+        show cin neutral at left
+        show jeha neutral at right
+        with dissolve 
+
+        cin "Good morning, everyone..."
+
+        jeha "Good morning, ladies~"
+
+        mari "I guess everyone, except for Kurt, is awake."
+
+        cin "Who are you talking about?"
+
+        mari "That boy's name is Kurt. He's still asleep."
+
+        hide jeha neutral
+        show jess neutral at right
+        with dissolve
+
+        jess "I see... Should we wake him up soon?"
+
+        mari "Not yet... Let him rest a bit longer."
+
     elif jess_picked:
         show jess neutral at right
         with dissolve
