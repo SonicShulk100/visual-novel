@@ -182,6 +182,18 @@ label chapter_2_part_1:
         "She noticed Kurt still asleep with his head resting on her breasts."
 
         cin "(At least Kurt is still asleep... I should let him rest a bit longer.)"
+
+        "She noticed the boy waking up."
+
+        kurt "Mmm... Where am I...?"
+
+        cin "Shh... It's okay, Kurt. You're safe."
+
+        kurt "Are you still craddling me...?"
+
+        cin "Of course I am. You feel safe in my arms."
+
+        cin "Um... Please don't tell the others that you woke up, okay...?"
     
     elif jeha_picked:
         show jeha neutral at center
