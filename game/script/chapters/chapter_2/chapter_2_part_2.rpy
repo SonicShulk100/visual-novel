@@ -9,6 +9,27 @@ label chapter_2_part_2:
 
         if dijo_picked:
             dijo "Good morning, Kurt..."
+
+            kurt "G-Good morning..."
+
+            cin "He's awake... Slowly but surely..."
+
+            hide cin neutral
+            show jess neutral at left
+            with dissolve
+
+            jess "Hi there. The name's Jessica."
+
+            kurt "I-I'm Kurt... Nice to meet you..."
+
+            hide jess neutral
+            show jeha neutral at left
+            with dissolve
+
+            mari "I'm Maria."
+
+            jeha "And I'm Jehanne."
+
     else:
         kurt "Um... I'm awake...?"
 

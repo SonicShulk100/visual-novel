@@ -60,6 +60,10 @@ label chapter_2_part_1:
 
         dijo "The boy's name who's still asleep."
 
+        dijo "Let's prepare to leave the forest soon."
+
+        jump chapter_2_part_2
+
     elif mari_picked:
         show mari neutral at center
         with dissolve
