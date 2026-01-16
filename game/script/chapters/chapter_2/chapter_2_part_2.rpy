@@ -103,6 +103,10 @@ label chapter_2_part_2:
             cin "Sorry..."
 
             dijo "But Cindy's right. We need to know more about you."
+        
+        elif jeha_picked:
+            "TODO"
+            #TODO: Continue the part for Jehanne.
     else:
         kurt "Um... I'm awake...?"
 

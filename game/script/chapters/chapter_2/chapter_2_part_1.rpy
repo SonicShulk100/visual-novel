@@ -228,6 +228,9 @@ label chapter_2_part_1:
 
         "Before she began to move, she slapped her ass and rubbed her pussy a little bit through her purple panties."
 
+        show dijo neutral at right
+        with dissolve
+
         "There, she noticed Dijonay awake, still craddling the sleeping Kurt in her arms."
 
         jeha "Good morning, Dijo..."
@@ -237,3 +240,22 @@ label chapter_2_part_1:
         jeha "That kid is still asleep...?"
 
         dijo "Yes, he is. We should let him rest a bit longer."
+
+        show mari neutral at left
+        with dissolve
+
+        mari "Good morning, Jehanne and Dijo."
+
+        hide jeha neutral
+        show jess neutral at center
+        with dissolve
+
+        jess "Good morning, everyone."
+
+        hide dijo neutral
+        show cin neutral at right
+        with dissolve
+
+        cin "Yawn... Good morning, everyone..."
+
+        jump chapter_2_part_2
