@@ -13,8 +13,10 @@ case $command in
             git add .
             git commit -m "$comment"
             git push -u origin "$branch"
+
+            cowsay -f dragon "Changes have been successfully committed and pushed."
         } || {
-            echo "An error occurred during the git operations."
+            cowsay -f dragon "An error occurred during the git operations."
         }
         ;;
     (rebase)
