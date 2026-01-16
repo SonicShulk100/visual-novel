@@ -2,7 +2,6 @@ label chapter_2_part_2:
     if not cin_picked:
         "As they prepared to leave the forest, the boy suddenly stirred from his sleep."
 
-        #TODO: Finish the part for Dijonay.
         #TODO: Finish the part for Maria
         #TODO: Finish the part for Jessica
         #TODO: Finish the part for Jehanne.
@@ -29,7 +28,31 @@ label chapter_2_part_2:
             mari "I'm Maria."
 
             jeha "And I'm Jehanne."
+        
+        elif mari_picked:
+            mari "Well, speaking of which..."
 
+            dijo "Well... Hello there, Kurt..."
+
+            jess "Looks like our little friend is awake now."
+
+            kurt "Um... Hello...?"
+
+            mari "Don't worry about us. We won't harm you."
+
+            hide mari neutral
+            show jess neutral at center
+            with dissolve
+
+            jess "Yeah, we're all friends here."
+
+            kurt "F-Friends...?"
+
+            hide jess neutral
+            show jeha neutral at right
+            with dissolve
+
+            jeha "Obviusly...! We decided to take you in after finding you alone in the forest."
     else:
         kurt "Um... I'm awake...?"
 

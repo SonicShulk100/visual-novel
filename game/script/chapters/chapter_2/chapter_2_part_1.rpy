@@ -124,6 +124,8 @@ label chapter_2_part_1:
 
         mari "Not yet... Let him rest a bit longer."
 
+        jump chapter_2_part_2
+
     elif jess_picked:
         show jess neutral at center
         with dissolve
