@@ -2,8 +2,6 @@ label chapter_2_part_2:
     if not cin_picked:
         "As they prepared to leave the forest, the boy suddenly stirred from his sleep."
 
-        #TODO: Finish the part for Maria
-        #TODO: Finish the part for Jessica
         #TODO: Finish the part for Jehanne.
 
         if dijo_picked:
@@ -64,6 +62,47 @@ label chapter_2_part_2:
             jess "Hey there... Finally took a rest."
 
             dijo "Looks like our little friend is awake now."
+
+            kurt "Um... Hello...?"
+
+            hide jess neutral
+            show cin neutral at center
+            with dissolve
+
+            cin "Don't worry about us. We won't harm you."
+
+            cin "I'm Cindy, by the way."
+
+            hide cin neutral
+            show jeha neutral at center
+            with dissolve
+
+            jeha "I'm Jehanne."
+
+            hide jeha neutral
+            show dijo neutral at center
+            with dissolve
+
+            dijo "And I'm Dijonay."
+
+            dijo "As you can already know... We are hyperpregnant ladies who found you alone in the forest."
+
+            kurt "Well... I know that... But why though...?"
+
+            hide dijo neutral
+            show cin neutral at center
+            with dissolve
+
+            cin "We're all worried! You just appeared out of nowhere, with no memory of who you are, aside your name..."
+
+            show dijo neutral at right
+            with dissolve
+
+            dijo "Alright, that's enough, Cindy. Let's not overwhelm him."
+
+            cin "Sorry..."
+
+            dijo "But Cindy's right. We need to know more about you."
     else:
         kurt "Um... I'm awake...?"
 
