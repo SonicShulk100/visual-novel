@@ -149,7 +149,7 @@ label chapter_2_part_1:
 
         jess "Probably. This forest is so peaceful; it's hard to wake up early here."
 
-        show dijo neutral at rigth
+        show dijo neutral at right
         with dissolve
 
         dijo "Good morning, you two."
@@ -176,6 +176,8 @@ label chapter_2_part_1:
         dijo "Who's Kurt...?"
 
         jess "He's the boy's name who's still asleep."
+
+        jump chapter_2_part_2
     
     elif cin_picked:
         show cin neutral at center

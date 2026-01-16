@@ -6,7 +6,7 @@ read -p "Enter the command: " command
 
 case $command in 
     (commit)
-        read -p "Enter the commit -message : " comment
+        read -p "Enter the commit message : " comment
         read -p "Enter the branch you're in : " branch
 
         {
@@ -15,7 +15,8 @@ case $command in
             git push -u origin "$branch"
 
             cowsay -f dragon "Changes have been successfully committed and pushed."
-        } || {
+        } ||
+        {
             cowsay -f dragon "An error occurred during the git operations."
         }
         ;;
@@ -23,6 +24,7 @@ case $command in
         read -p "Enter the source branch : " sourceBranch
         read -p "Enter the target branch : " targetBranch
         {
+            git fetch origin
             git switch "$targetBranch"
             git pull
             git rebase origin/"$sourceBranch"
@@ -31,7 +33,7 @@ case $command in
             cowsay -f dragon "Rebase operation completed successfully."
         } ||
         {
-            ecowsay -f dragon "An error occurred during the rebase operation."
+            cowsay -f dragon "An error occurred during the rebase operation."
         }
         ;;
     (update)

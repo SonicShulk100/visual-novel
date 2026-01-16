@@ -53,6 +53,17 @@ label chapter_2_part_2:
             with dissolve
 
             jeha "Obviusly...! We decided to take you in after finding you alone in the forest."
+
+            kurt "I... I see..."
+
+            jeha "By the way, I'm Jehanne."
+
+            dijo "And I'm Dijonay."
+        
+        elif jess_picked:
+            jess "Hey there... Finally took a rest."
+
+            dijo "Looks like our little friend is awake now."
     else:
         kurt "Um... I'm awake...?"
 
