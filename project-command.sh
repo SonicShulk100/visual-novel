@@ -27,9 +27,20 @@ case $command in
             git pull
             git rebase origin/"$sourceBranch"
             git push -f origin "$targetBranch"
+
+            cowsay -f dragon "Rebase operation completed successfully."
         } ||
         {
-            echo "An error occurred during the git rebase operation."
+            ecowsay -f dragon "An error occurred during the rebase operation."
         }
         ;;
+    (update)
+    {
+        ./update-project.sh
+
+        cowsay -f dragon "Project has been successfully updated."
+    } ||
+    {
+        cowsay -f dragon "An error occurred during the project update."
+    }
 esac
