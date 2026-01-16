@@ -106,7 +106,12 @@ label chapter_2_part_2:
         
         elif jeha_picked:
             "TODO"
-            #TODO: Continue the part for Jehanne.
+            
+            hide cin neutral
+            show jeha neutral at right
+            with dissolve
+
+            jeha "Looks like someone is awake now..."
     else:
         kurt "Um... I'm awake...?"
 
