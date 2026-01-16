@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-fortune | cowsay -f dragon
+fortune | cowsay -f dragon -b
 
 git add .
 git commit -m "$1"
