@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-cowsay -f dragon "Time to commit motherfucker!"
+fortune | cowsay -f dragon
 
 git add .
 git commit -m "$1"
