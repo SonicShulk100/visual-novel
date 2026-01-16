@@ -1,8 +1,14 @@
 label chapter_2_part_2:
     if not cin_picked:
+        "As they prepared to leave the forest, the boy suddenly stirred from his sleep."
+
+        #TODO: Finish the part for Dijonay.
+        #TODO: Finish the part for Maria
+        #TODO: Finish the part for Jessica
+        #TODO: Finish the part for Jehanne.
+
         if dijo_picked:
-            #TODO: Continue the scene from Dijonay's perspective where Cindy is still asleep.
-            "TODO: Continue the scene from Dijonay's perspective where Cindy wakes up."
+            dijo "Good morning, Kurt..."
     else:
         kurt "Um... I'm awake...?"
 
