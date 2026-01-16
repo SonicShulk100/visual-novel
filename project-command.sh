@@ -38,7 +38,7 @@ case $command in
     {
         ./update-project.sh
 
-        cowsa -f dragon "Project has been successfully updated."
+        cowsay -f dragon "Project has been successfully updated."
     } ||
     {
         cowsay -f dragon "An error occurred during the project update."
