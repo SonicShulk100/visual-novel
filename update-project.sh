@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+cowsay -f dragon "Updating the project!!!"
+
 git fetch origin
 
 git switch main && git pull && git rebase origin/main && git push -u origin main
@@ -55,3 +57,5 @@ for SUB_AUDIO_BRANCH in "${AUDIO_BRANCHES[@]}"; do
 done
 
 git switch main && git pull
+
+cowsay -f dragon "Project updated successfully!"

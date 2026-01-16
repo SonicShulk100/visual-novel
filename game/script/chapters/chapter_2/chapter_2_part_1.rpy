@@ -60,6 +60,10 @@ label chapter_2_part_1:
 
         dijo "The boy's name who's still asleep."
 
+        dijo "Let's prepare to leave the forest soon."
+
+        jump chapter_2_part_2
+
     elif mari_picked:
         show mari neutral at center
         with dissolve
@@ -119,6 +123,8 @@ label chapter_2_part_1:
         jess "I see... Should we wake him up soon?"
 
         mari "Not yet... Let him rest a bit longer."
+
+        jump chapter_2_part_2
 
     elif jess_picked:
         show jess neutral at center
@@ -194,6 +200,23 @@ label chapter_2_part_1:
         cin "Of course I am. You feel safe in my arms."
 
         cin "Um... Please don't tell the others that you woke up, okay...?"
+
+        kurt "Alright... I won't say anything."
+
+        "Kurt then went back to sleep."
+
+        "There..."
+
+        show mari neutral at right
+        show jess neutral at left
+        with dissolve
+
+        mari "Good morning, Cindy."
+        jess "Good morning, Cindy."
+
+        cin "Good morning, you two."
+
+        jump chapter_2_part_2
     
     elif jeha_picked:
         show jeha neutral at center
