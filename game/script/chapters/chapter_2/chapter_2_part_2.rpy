@@ -1,20 +1,43 @@
 label chapter_2_part_2:
-    "As they prepare to walk back home, Kurt began to slowly wake up from his slumber."
-
     if not cin_picked:
         if dijo_picked:
-            kurt "Ugh... Where am I...?"
-
-            dijo "Kurt! You're awake!"
-
-            kurt "Dijonay...? What happened?"
-
-            dijo "You fell asleep while we were resting. We need to head back home."
-
-            kurt "Right... Sorry about that."
-
-            dijo "It's okay. Just glad you're awake now."
+            #TODO: Continue the scene from Dijonay's perspective where Cindy is still asleep.
+            "TODO: Continue the scene from Dijonay's perspective where Cindy wakes up."
     else:
         kurt "Um... I'm awake...?"
 
-        cin "Ah!"
+        cin "Ah! Kurt...! You were supposed to be resting..."
+
+        mari "That's his name...?"
+
+        jess "Kurt...?"
+
+        cin "Um... Yes. His name is Kurt. And... That's the only thing he remembers..."
+
+        jess "Well, it's nice to meet you, Kurt."
+
+        mari "I'm Maria, and this is Jessica."
+
+        kurt "R-Right... Nice to meet you both..."
+
+        cin "There are also Jehanne and Dijonay that are still asleep at the moment."
+
+        hide mari neutral
+        hide jess neutral
+        with dissolve
+
+        show dijo neutral at left
+        show jeha neutral at right
+        with dissolve
+
+        dijo "Did you say something...?"
+
+        cin "Nevermind..."
+
+        jeha "Good morning, sleepyheads~"
+
+        kurt "G-Good morning..."
+
+        cin "Looks like everyone is awake now..."
+
+    #TODO: Continue the story from here for chapter 2 part 2
