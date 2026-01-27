@@ -26,3 +26,5 @@
 /strings.json
 
 /.vscode/**
+
+/game/libs/vscode_renpy_warp_*.rpe*
