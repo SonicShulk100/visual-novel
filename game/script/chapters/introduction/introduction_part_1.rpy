@@ -1,5 +1,4 @@
 label introduction_part_1:
-    #TODO: Get on the part.
     scene forest-night
     with fade
 
@@ -12,3 +11,5 @@ label introduction_part_1:
     "With 32 years of age and a hyperpregnancy span of 12 years and still going, they are still fighting for their own best interests."
 
     "All while maintaining their hyperpregnancy."
+
+    jump introduction_choice
