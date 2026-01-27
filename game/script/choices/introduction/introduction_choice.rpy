@@ -10,4 +10,4 @@ label introduction_choice:
     menu:
         "Maria":
             $ mari_introduced = True
-            pass
+            jump introduction_mari
