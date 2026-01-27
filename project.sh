@@ -24,4 +24,23 @@ case $command in
             exit 1
         }
         ;;
+    (rebase)
+        read -p "Enter the source branch : " sourceBranch
+        read -p "Enter the target branch : " targetBranch
+        {
+            if [[ -z "$sourceBranch" || -z "$targetBranch" ]]; then
+                cowsay -d "Enter either the message or the branch."
+                exit 1
+            fi
+            git switch "$targetBranch"
+            git pull
+            git rebase origin/"$sourceBranch"
+            git push -u origin "$targetBranch"
+
+            cowsay -g "Rebasing complete."
+        } || {
+            cowsay -d "Something went wrong...!"
+            exit 1
+        }
+        ;;
 esac
