@@ -1,33 +1,73 @@
-﻿# The script of the game goes in this file.
+﻿init python:
+    Maria = VisualNovelCharacter("Maria", "mari", "#5199e9")
+    Jessica = VisualNovelCharacter("Jessica", "jess", "#e1c5da")
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+    character_list = [Maria, Jessica]
 
-define e = Character("Eileen")
+    emotion_list = ["angry", "babykicks", "contraction", "neutral", "sad", "waterbreak"]
 
+    for char in character_list:
+        for emotion in emotion_list:
+            char.add_emotion(f"{emotion}", f"images/characters/{char.image_prefix}/{char.image_prefix}_{emotion}.png")
+
+define mari = Maria.character
+define jess = Jessica.character
 
 # The game starts here.
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    "Which do you want to test"
 
-    scene bg room
+    menu:
+        "Maria":
+            jump maria_test
+        "Jessica":
+            jump jess_start
+        "Cancel":
+            return
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+label maria_test:
+    show mari neutral at center
+    with dissolve
+    mari "This is me neutral"
+    show mari angry at center
+    with dissolve
+    mari "This is me angry"
+    show mari sad at center
+    with dissolve
+    mari "This is me sad"
+    show mari babykicks at center
+    with dissolve
+    mari "This is me babykicks"
+    show mari contraction at center
+    with dissolve
+    mari "This is me contraction"
+    show mari waterbreak at center
+    with dissolve
+    mari "This is me water break."
+    hide mari waterbreak with dissolve
+    jump start
 
-    show eileen happy
+label jess_start:
 
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
-
-    return
+    show jess neutral at center
+    with dissolve
+    jess "This is me neutral"
+    show jess angry at center
+    with dissolve
+    jess "This is me angry"
+    show jess sad at center
+    with dissolve
+    jess "This is me sad"
+    show jess babykicks at center
+    with dissolve
+    jess "This is me babykicks"
+    show jess contraction at center
+    with dissolve
+    jess "This is me contraction"
+    show jess waterbreak at center
+    with dissolve
+    jess "This is me water break."
+    hide jess waterbreak with dissolve
+    jump start
