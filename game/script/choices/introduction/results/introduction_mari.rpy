@@ -1,5 +1,4 @@
 label introduction_mari:
-    #TODO: Do the introduction for Maria.
 
     show mari neutral at center
     with dissolve
