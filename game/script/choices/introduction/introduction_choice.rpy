@@ -4,7 +4,7 @@ default jess_introduced = False
 
 label introduction_choice:
     "Which character do you want to know?"
-    
+
     #TODO: Do the introduction for Jessica.
 
     menu:
@@ -14,3 +14,5 @@ label introduction_choice:
         "Jessica" if not jess_introduced:
             $ jess_introduced = True
             jump introduction_jess
+        "Continue" if mari_introduced and jess_introduced:
+            pass
