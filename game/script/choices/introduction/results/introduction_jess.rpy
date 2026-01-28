@@ -40,4 +40,8 @@ label introduction_jess:
 
     "And together they form a D&D party that they're still at it to this very day."
 
+    hide mari neutral
+    hide jess neutral
+    with dissolve
+
     jump introduction_choice
