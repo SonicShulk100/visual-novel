@@ -4,6 +4,9 @@ label rescue_mari:
 
     mari "I'll do it... I can help him..."
 
+    show jess neutral at left
+    with dissolve
+
     jess "WE will help him... together..."
 
     "Maria picked the unconscious werewolf boy up carefully and cradled him in her arms, resting his head between her big, MILFy breasts."
@@ -16,4 +19,6 @@ label rescue_mari:
 
     mari "And also the campfire back there..."
 
-    jess : "Good idea..."
+    jess "Good idea..."
+
+    jump chapter_1_part_2
