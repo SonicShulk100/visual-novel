@@ -4,6 +4,7 @@ label rescue_choice:
 
     show mari neutral at right
     show jess neutral at left
+    with dissolve
 
     "Who do you want to help the unconscious werewolf boy?"
 
@@ -14,5 +15,5 @@ label rescue_choice:
             hide mari neutral
             hide jess neutral
             with dissolve
-            
+
             jump rescue_mari
