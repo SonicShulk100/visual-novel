@@ -73,3 +73,11 @@ label chapter_1_part_3:
     kurt "Y-Yeah... Nice to meet you both too..."
 
     "And so, the three of them stayed together at the campfire for the rest of the night, talking and getting to know each other better."
+
+    "Eventually, they all went to sleep, with Kurt sleeping in between Maria and Jessica for warmth and comfort."
+
+    hide mari neutral
+    hide jess neutral
+    with dissolve
+
+    jump chapter_2_part_1
