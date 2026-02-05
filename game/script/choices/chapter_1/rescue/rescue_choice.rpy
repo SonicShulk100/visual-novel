@@ -1,4 +1,5 @@
 default mari_rescue = False
+default jess_rescue = False
 
 label rescue_choice:
 
@@ -17,3 +18,12 @@ label rescue_choice:
             with dissolve
 
             jump rescue_mari
+        
+        "Jessica":
+            $ jess_rescue = True
+
+            hide mari neutral
+            hide jess neutral
+            with dissolve
+
+            jump rescue_jess
