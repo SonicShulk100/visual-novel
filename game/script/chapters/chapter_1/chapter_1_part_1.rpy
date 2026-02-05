@@ -94,3 +94,5 @@ label chapter_1_part_1:
     mari "Oh no... He's unconscious..."
 
     jess "We need to help him..."
+
+    jump rescue_choice
