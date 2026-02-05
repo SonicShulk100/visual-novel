@@ -64,3 +64,5 @@ label chapter_1_part_2:
         mari "Right..."
     
     "And so, the two girls stayed like that, their hands on each other's ass."
+
+    jump chapter_1_part_3
