@@ -17,3 +17,39 @@ label chapter_2_part_1:
     mari "Yeah, I had a good sleep. How about you?"
 
     jess "Me as well..."
+
+    mari "So... Should we wake Kurt up?"
+
+    jess "Let's wait until he wakes up on his own..."
+
+    mari "I suppose so..."
+
+    "Just then, the two ladies noticed Kurt waking up."
+
+    kurt "Ugh... W-What happened...?"
+
+    mari "Ah! Good morning, sleepyhead."
+
+    jess "Finally decided to wake up, huh...?"
+
+    kurt "Not really... I need to be fully awakened..."
+
+    mari "There's no rush on that... take your time."
+
+    scene forest-day
+    with fade
+
+    show mari neutral at left
+    show jess neutral at right
+
+    "After a while, Kurt was finally awakened with him being between Maria and Jessica."
+
+    jess "So... Are we ready?"
+
+    mari "Um, Jess... What about our usual walking style?"
+
+    jess "Oh... Right..."
+
+    kurt "Um... What walking style...?"
+
+    jess "You see, Kurt... Even before we rescued you, we would walk wiht our hand resting on eachother's ass..."
