@@ -61,3 +61,5 @@ label chapter_2_part_1:
     mari "See...? We always put our hand like that so that we could keep eachother..."
 
     "They then pulled their hand off."
+
+    jump chapter_2_groping_choice

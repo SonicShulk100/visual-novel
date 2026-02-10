@@ -6,5 +6,6 @@ label chapter_2_groping_choice:
     menu:
         "I think I am...":
             #TODO: Do the parts for Jessica and Maria
+            jump chapter_2_accepted_choice
         "No thanks!":
             #TODO : Do the part for refusal
