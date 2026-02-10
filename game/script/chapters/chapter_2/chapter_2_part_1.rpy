@@ -53,3 +53,11 @@ label chapter_2_part_1:
     kurt "Um... What walking style...?"
 
     jess "You see, Kurt... Even before we rescued you, we would walk wiht our hand resting on eachother's ass..."
+
+    mari "Yes, like so..."
+
+    "And so, they put their hand on eachother's ass."
+
+    mari "See...? We always put our hand like that so that we could keep eachother..."
+
+    "They then pulled their hand off."
