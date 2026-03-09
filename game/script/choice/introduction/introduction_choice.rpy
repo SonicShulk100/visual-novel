@@ -11,7 +11,6 @@ label introduction_choice:
 
     "Which one of you want to introduce?"
 
-    #TODO: Do the introduction for each character, and then jump to the next part of the story.
     menu:
         "Dijonay" if not dijo_introduced:
             $ dijo_introduced = True
@@ -38,5 +37,4 @@ label introduction_choice:
             $ kootie_introduced = True
             jump kootie_introduct
         "Continue" if dijo_introduced and maria_introduced and jessica_introduced and cindy_introduced and jehanne_introduced and whitney_introduced and antoinette_introduced and kootie_introduced and kootie_introduced:
-            #TODO: Jump to the next part of the story.
-            pass
+            jump introduction_part_2
