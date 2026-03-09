@@ -2,6 +2,7 @@
 default dijo_introduced = False
 default maria_introduced = False
 default jessica_introduced = False
+default cindy_introduced = False
 label introduction_choice:
 
     "Which one of you want to introduce?"
@@ -17,9 +18,9 @@ label introduction_choice:
         "Jessica" if not jessica_introduced:
             $ jessica_introduced = True
             jump jess_introduct
-        "Cindy":
-            #TODO: Do the introduction for Cindy.
-            pass
+        "Cindy" if not cindy_introduced:
+            $ cindy_introduced = True
+            jump cin_introduct
         "Jehanne":
             #TODO: Do the introduction for Jehanne.
             pass
@@ -32,6 +33,6 @@ label introduction_choice:
         "Kootie":
             #Do the introduction for Kootie.
             pass
-        "Continue" if dijo_introduced and maria_introduced and jessica_introduced:
+        "Continue" if dijo_introduced and maria_introduced and jessica_introduced and cindy_introduced:
             #TODO: Jump to the next part of the story.
             pass
