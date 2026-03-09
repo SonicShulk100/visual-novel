@@ -6,6 +6,7 @@ default cindy_introduced = False
 default jehanne_introduced = False
 default whitney_introduced = False
 default antoinette_introduced = False
+default kootie_introduced = False
 label introduction_choice:
 
     "Which one of you want to introduce?"
@@ -33,9 +34,9 @@ label introduction_choice:
         "Whitney" if not whitney_introduced:
             $ whitney_introduced = True
             jump whitney_introduct
-        "Kootie":
-            #Do the introduction for Kootie.
-            pass
-        "Continue" if dijo_introduced and maria_introduced and jessica_introduced and cindy_introduced and jehanne_introduced and whitney_introduced and antoinette_introduced:
+        "Kootie" if not kootie_introduced:
+            $ kootie_introduced = True
+            jump kootie_introduct
+        "Continue" if dijo_introduced and maria_introduced and jessica_introduced and cindy_introduced and jehanne_introduced and whitney_introduced and antoinette_introduced and kootie_introduced and kootie_introduced:
             #TODO: Jump to the next part of the story.
             pass
