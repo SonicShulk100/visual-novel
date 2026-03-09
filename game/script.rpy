@@ -1,33 +1,41 @@
-﻿# The script of the game goes in this file.
+﻿init python:
+    Dijonay = VisualNovelCharacter("Dijonay", "dijo", "#0000FF")
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+    emotion_list = ["neutral", "happy", "sad", "angry", "babykicks", "contraction", "waterbreak", "intimidated"]
+    characters = [Dijonay]
 
-define e = Character("Eileen")
+    for character in characters:
+        for emotion in emotion_list:
+            character.add_emotion(emotion, f"images/characters/{character.image_prefix}/{character.image_prefix}_{emotion}.png")
 
-
-# The game starts here.
+#Defining the characters.
+define dijo = Dijonay.character
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
     scene bg room
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    "Which character do you want to test?"
 
-    show eileen happy
+    menu:
+        "Dijonay":
+            jump dijonay_test
+        "None":
+            return
 
-    # These display lines of dialogue.
+#Characters to test
+default emotion_list = ["neutral", "sad", "angry", "babykicks", "contraction", "waterbreak", "intimidated"]
 
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
-
-    return
+#For Dijonay.
+label dijonay_test:
+    python:
+        for emotion in emotion_list:
+            if emotion not in Dijonay.emotions:
+                continue
+            renpy.show("dijo " + emotion, at_list=[center])
+            renpy.with_statement(dissolve)
+            renpy.say(dijo, f"This is me {emotion}.")
+            renpy.hide("dijo " + emotion)
+            renpy.with_statement(dissolve)
+    
+    jump start
