@@ -2,9 +2,10 @@
     Dijonay = VisualNovelCharacter("Dijonay", "dijo", "#0000FF")
     Maria = VisualNovelCharacter("Maria", "mari", "#5199e9")
     Jessica = VisualNovelCharacter("Jessica", "jess", "#f4f3f5")
+    Cindy = VisualNovelCharacter("Cindy", "cin", "#b2a78a")
 
     emotion_list = ["neutral", "happy", "sad", "angry", "babykicks", "contraction", "waterbreak", "intimidated"]
-    characters = [Dijonay, Maria, Jessica]
+    characters = [Dijonay, Maria, Jessica, Cindy]
 
     for character in characters:
         for emotion in emotion_list:
@@ -14,6 +15,7 @@
 define dijo = Dijonay.character
 define mari = Maria.character
 define jess = Jessica.character
+define cin = Cindy.character
 label start:
 
     scene bg room
@@ -27,6 +29,8 @@ label start:
             jump maria_test
         "Jessica":
             jump jessica_test
+        "Cindy":
+            jump cindy_test
         "None":
             return
 
@@ -71,6 +75,20 @@ label jessica_test:
             renpy.with_statement(dissolve)
             renpy.say(jess, f"This is me {emotion}.")
             renpy.hide("jess " + emotion)
+            renpy.with_statement(dissolve)
+    
+    jump start
+
+#For Cindy.
+label cindy_test:
+    python:
+        for emotion in emotion_list:
+            if emotion not in Cindy.emotions:
+                continue
+            renpy.show("cin " + emotion, at_list=[center])
+            renpy.with_statement(dissolve)
+            renpy.say(cin, f"This is me {emotion}.")
+            renpy.hide("cin " + emotion)
             renpy.with_statement(dissolve)
     
     jump start
