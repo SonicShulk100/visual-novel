@@ -11,3 +11,5 @@ label introduction_part_1:
     "Altough they came from different backgrounds, the 8 ladies helped eachother out, even despite the burden of being 12 years hyperpregnant."
 
     "And the hormones from the hyperpregnancy building up."
+
+    jump introduction_choice
