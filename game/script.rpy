@@ -7,9 +7,10 @@ init python:
     Cindy = VisualNovelCharacter("Cindy", "cin", "#b2a78a")
     Jehanne = VisualNovelCharacter("Jeanne", "jeha", "#5a5a5a")
     Antoinette = VisualNovelCharacter("Antoinette", "antoinette", "#9aab67")
+    Whitney = VisualNovelCharacter("Whitney", "whitney", "#11c9cf")
 
     emotion_list = ["neutral", "happy", "sad", "angry", "babykicks", "contraction", "waterbreak", "intimidated"]
-    characters = [Dijonay, Maria, Jessica, Cindy, Jehanne, Antoinette]
+    characters = [Dijonay, Maria, Jessica, Cindy, Jehanne, Antoinette, Whitney]
 
     for character in characters:
         for emotion in emotion_list:
@@ -22,6 +23,7 @@ define jess = Jessica.character
 define cin = Cindy.character
 define jeha = Jehanne.character
 define antoinette = Antoinette.character
+define whitney = Whitney.character
 label start:
 
     scene bg room
@@ -41,6 +43,8 @@ label start:
             jump jehanne_test
         "Antoinette":
             jump antoinette_test
+        "Whitney":
+            jump whitney_test
         "None":
             return
 
@@ -127,6 +131,20 @@ label antoinette_test:
             renpy.with_statement(dissolve)
             renpy.say(antoinette, f"This is me {emotion}.")
             renpy.hide("antoinette " + emotion)
+            renpy.with_statement(dissolve)
+    
+    jump start
+
+#For Whitney.
+label whitney_test:
+    python:
+        for emotion in emotion_list:
+            if emotion not in Whitney.emotions:
+                continue
+            renpy.show("whitney " + emotion, at_list=[center])
+            renpy.with_statement(dissolve)
+            renpy.say(whitney, f"This is me {emotion}.")
+            renpy.hide("whitney " + emotion)
             renpy.with_statement(dissolve)
     
     jump start
