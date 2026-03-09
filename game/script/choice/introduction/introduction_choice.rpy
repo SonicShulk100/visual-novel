@@ -8,11 +8,9 @@ label introduction_choice:
     #TODO: Do the introduction for each character, and then jump to the next part of the story.
     menu:
         "Dijonay" if not dijo_introduced:
-            #Do the introduction for Dijonay.*
             $ dijo_introduced = True
             jump dijo_introduct
         "Maria" if not maria_introduced:
-            #TODO: Do the introduction for Maria.
             $ maria_introduced = True
             jump mari_introduct
         "Jessica":
