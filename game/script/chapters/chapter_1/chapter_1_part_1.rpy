@@ -96,5 +96,26 @@ label chapter_1_part_1:
     dijo "And of course, we are all very grateful for you doing this for us. We will do anything to make sure you're happy here."
 
     dijo "In fact... Do you want to try it out right now? I mean, if you're not sure about it, you can just try it out and see how you feel about it."
-    
+
     dijo "We won't force you to do anything you don't want to do."
+
+    player "Well... I don't see why not..."
+
+    dijo "Good then. Follow me."
+
+    hide dijo neutral with dissolve
+
+    scene farm-bedroom with fade
+
+    show dijo neutral at center
+    with dissolve
+
+    "Dijonay led [player_name] to her bedroom."
+
+    "There, she stripped herself naked, casting her clothes aside from the time being."
+
+    "Her belly was huge, round, and stretched to its limits. The sight of it was both mesmerizing and intimidating at the same time."
+
+    dijo "When it comes to satisfying a hyperpregnant lady's needs, one must have a certain level of touch on her body."
+
+    dijo "You've rubbed my belly so far, so why don't you try rubbing \"other\" places as well."
