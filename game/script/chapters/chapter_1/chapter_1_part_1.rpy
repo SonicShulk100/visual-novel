@@ -76,3 +76,25 @@ label chapter_1_part_1:
     dijo "Well..."
 
     "Dijonay put [player_name]'s hands on her belly."
+
+    dijo "I want you to be the rapists of us."
+
+    player "Wait, what? I'm sorry, but I don't think I heard you correctly. Did you just say you want me to be the rapists of you all?"
+
+    dijo "I know that's kind of an odd request, but... It's the truth. The others gave me the okay for this as well."
+
+    dijo "Ever since we got hyperpregnant, our hormones are starting to grow out of control..."
+
+    dijo "And we need someone to help us with that. We need someone to... satisfy our needs."
+
+    player "Well... you couldn've picked another word from describing your need instead of wanting a rapist, but... What are the benefits from this job? I mean, I don't want to do this just for the sake of doing it."
+
+    dijo "Well... For starters, All ladies, including me, are ready for the sexual advances you can do, like rubbing our bellies for example."
+
+    dijo "Also, we are ready at disposable for unwanted advances, like... you know... the actual raping part."
+
+    dijo "And of course, we are all very grateful for you doing this for us. We will do anything to make sure you're happy here."
+
+    dijo "In fact... Do you want to try it out right now? I mean, if you're not sure about it, you can just try it out and see how you feel about it."
+    
+    dijo "We won't force you to do anything you don't want to do."
